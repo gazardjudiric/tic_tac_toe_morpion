@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./default.css" />
+    <title>Morpion Game</title>
+  </head>
+
+  <body>
+    <h1 class="title">Tic tac toe (Morpion Game)</h1>
+    <div id="bodyContent">
+      <div id="indication">
+        <h3>C'est autour du Joueur 👉<span id="joueur"> 1</span></h3>
+        <h3>Symbole du Joueur 1 : <span> X</span></h3>
+        <h3>Symbole du Joueur 2 : <span> O</span></h3>
+      </div>
+
+      <div id="grid">
+        <div id="c1" class="case"></div>
+        <div id="c2" class="case"></div>
+        <div id="c3" class="case"></div>
+        <div id="c4" class="case"></div>
+        <div id="c5" class="case"></div>
+        <div id="c6" class="case"></div>
+        <div id="c7" class="case"></div>
+        <div id="c8" class="case"></div>
+        <div id="c9" class="case"></div>
+      </div>
+
+      <div id="score">
+        <h3>Score du joueur 1 : <span id="score1"> 0</span></h3>
+        <h3>Score du joeur 2 : <span id="score2"> 0</span></h3>
+        <h3>Matchs nuls : <span class="scoreNul"> 0</span></h3>
+      </div>
+
+      <div class="modalHome">
+        <div class="modal">
+          <h1 id="modaltextSuccess">
+            ✨Le gagnant est le joueur <span id="numWinJoueur">1</span>✨
+          </h1>
+          <h1 id="modaltextMatchNull">😢Oups Match Null😥</h1>
+          <div class="modalButton">
+            <button id="buttonRejouer" class="btn1">Rejouer</button>
+            <button id="buttonReset" class="btn2">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

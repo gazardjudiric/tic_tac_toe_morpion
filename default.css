@@ -1,0 +1,29 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn1 {
+  border-style: none;
+  padding: 8px 14px 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  width: 30%;
+  cursor: pointer;
+  text-align: center;
+}
+.btn2 {
+  border-style: none;
+  padding: 8px 14px 8px 14px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #f1d24c;
+  font-weight: bold;
+  width: 30%;
+  cursor: pointer;
+  text-align: center;
+}

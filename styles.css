@@ -1,0 +1,223 @@
+/* ------------------ Start body css custom */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #484848;
+  height: 100vh;
+  width: 100%;
+}
+.title {
+  margin-left: 5rem;
+  color: #12c6d0;
+  text-align: center;
+}
+#bodyContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: sans-serif;
+  position: relative;
+  width: 100%;
+  padding: 0 5rem;
+}
+h3 {
+  margin-bottom: 30px;
+  color: #12c6d0;
+}
+h3 > span {
+  color: #fff;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 6.5rem);
+  grid-template-rows: repeat(3, 6.5rem);
+  gap: 1rem;
+  margin: 3rem auto;
+}
+.case {
+  border: 1px solid #f1d24c;
+  color: #12c6d0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+/* ---------------------------- End body css custom */
+
+/* --------------------------------Start Modal css custom */
+.modalHome {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  visibility: hidden;
+}
+.modal {
+  background-color: #fff;
+  height: 200px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+#modaltextSuccess {
+  margin-top: 2rem;
+  color: #12c6d0;
+  width: 100%;
+  text-align: center;
+}
+#modaltextMatchNull {
+  margin-top: -2rem;
+  color: #12c6d0;
+  width: 100%;
+  text-align: center;
+}
+.modalButton {
+  background-color: #f1d24c;
+  border-radius: 10px;
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-around;
+}
+/* --------------------------------End Modal css custom */
+
+/* ******************** Start Responsive */
+
+/* Desktop >= 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablette >= 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title {
+    margin-top: 7rem;
+    margin-left: 0 !important;
+  }
+  #bodyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    font-family: sans-serif;
+    position: relative;
+    height: 100vh;
+    margin-top: 0;
+    padding: 0;
+  }
+  h3 {
+    margin-bottom: 30px;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(3, 7rem);
+    grid-template-rows: repeat(3, 7rem);
+    gap: 1rem;
+    margin: 3rem auto;
+  }
+  .modal {
+    width: 70%;
+  }
+  #modaltextSuccess {
+    margin-top: 3rem;
+    font-size: 28px;
+  }
+  #modaltextMatchNull {
+    margin-top: -4rem;
+    font-size: 30px;
+  }
+}
+
+/* Phone1 >= 576px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body {
+    justify-content: inherit;
+  }
+  .title {
+    margin-top: 7rem;
+    margin-left: 0 !important;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  #bodyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    font-family: sans-serif;
+    position: relative;
+    height: 100vh;
+    margin-top: 5rem;
+    padding: 0;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    grid-template-rows: repeat(3, 8rem);
+    gap: 2rem;
+    margin: 3rem auto;
+  }
+  .modal {
+    width: 100%;
+  }
+  #modaltextSuccess {
+    margin-top: 3rem;
+    font-size: 28px;
+  }
+  #modaltextMatchNull {
+    margin-top: -4rem;
+    font-size: 30px;
+  }
+}
+
+/* Phone2 < 575px */
+@media only screen and (max-width: 575px) {
+  body {
+    justify-content: inherit;
+  }
+  .title {
+    margin-top: 7rem;
+    margin-left: 0 !important;
+    font-size: 25px !important;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  #bodyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    font-family: sans-serif;
+    position: relative;
+    height: 100vh;
+    margin-top: 5rem;
+    padding: 0;
+  }
+  #grid {
+    gap: 1rem;
+    grid-template-columns: repeat(3, 5.6rem);
+    grid-template-rows: repeat(3, 5.6rem);
+  }
+  .modal {
+    width: 100%;
+  }
+  #modaltextSuccess {
+    margin-top: 3rem;
+    font-size: 24px;
+  }
+  #modaltextMatchNull {
+    margin-top: -3rem;
+    font-size: 25px;
+  }
+}
+
+/* ******************** End Responsive */
